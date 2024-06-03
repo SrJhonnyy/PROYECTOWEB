@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center; 
+    background-color: #CB4335;
+    color: #FFFFFF;
+    padding: 2 px;
+    margin-bottom: 2px;
+}
+
+#company-logo {
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    flex-grow: 1; 
+    text-align: center; 
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#panel1 {
+    background-color: #E67E22;
+    color: #ffffff;
+    padding: 30px;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: center; 
+    width: 92%; 
+}
+
+#Titulo-Registro {
+    color: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 24px; 
+    font-family: Arial, sans-serif; 
+    
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.card {
+  background-color: #fff;
+  width: 230px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease; 
+}
+
+
+.card:hover {
+  transform: translateY(-5px); 
+}
+
+.card__img {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__description {
+  padding: 15px; 
+}
+
+.text__description {
+  color: #333;
+  font-size: 16px; 
+  margin-bottom: 8px; 
+}
+
+.category, .code, .color, .brand, .model {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+
+  .container2 {
+    border: 2px solid #CB4335; 
+    padding: 20px; 
+    border-radius: 10px; 
+    background-color: #fff; 
+}
+
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 2rem;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ff9900;
+  }
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #CB4335;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }

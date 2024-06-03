@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center; 
+    background-color: #CB4335;
+    color: #FFFFFF;
+    padding: 2 px;
+    margin-bottom: 2px;
+}
+
+#company-logo {
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    flex-grow: 1; 
+    text-align: center; 
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#panel1 {
+    background-color: #E67E22;
+    color: #ffffff;
+    padding: 30px;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: center; 
+    width: 92%; 
+}
+
+#Titulo-Registro {
+    color: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 24px; 
+    font-family: Arial, sans-serif; 
+  
+}
+
+
+#h11 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+
+ul {
+    list-style-type: disc;
+    margin-bottom: 10px;
+}
+
+
+li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+
+.back-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #CB4335;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+
+.indicaciones {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.ejemplo-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.ejemplo-card h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.ejemplo p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+
+.back-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #CB4335;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}

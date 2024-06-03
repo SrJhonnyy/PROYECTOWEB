@@ -500,3 +500,49 @@ const productosf = [
         imagenUrl: "imagenes/imagen50.png"
     }
 ];
+
+const itemsPerPage = 15;
+let currentPage = 1;
+const totalPages = Math.ceil(productosf.length / itemsPerPage);
+
+const renderPage = (page) => {
+    const start = (page - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+    const items = productosf.slice(start, end);
+    const draggable = document.getElementById('draggable'); 
+    draggable.innerHTML = "";
+    for (let product of items) {
+        draggable.innerHTML += `
+            <div class="card">
+                <div class="card__img">
+                    <img src="${product.imagenUrl}" alt="${product.nombre}" />
+                </div>
+                <div class="card__description">
+                    <p class="text__description">${product.nombre}</p>
+                    <span class="price">Precio: ${product.precio}</span>
+                    <p class="category">Categoría: ${product.categoria}</p>
+                    <p class="code">Código: ${product.codigo}</p>
+                    <p class="color">Color: ${product.color}</p>
+                    <p class="material">Material: ${product.material}</p>
+                    <p class="size">Tamaño: ${product.tamaño}</p>
+                </div>
+            </div>
+        `;
+    }
+    renderPagination();
+};
+
+const renderPagination = () => {
+    const pagination = document.getElementById('pagination'); 
+    pagination.innerHTML = "";
+    for (let i = 1; i <= totalPages; i++) {
+        pagination.innerHTML += `<button onclick="goToPage(${i})">${i}</button>`;
+    }
+};
+
+const goToPage = (page) => {
+    currentPage = page;
+    renderPage(page);
+};
+
+renderPage(currentPage);

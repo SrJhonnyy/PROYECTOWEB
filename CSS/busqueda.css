@@ -1,0 +1,200 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center; 
+    background-color: #CB4335;
+    color: #FFFFFF;
+    padding: 2 px;
+    margin-bottom: 2px;
+}
+
+#company-logo {
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    flex-grow: 1; 
+    text-align: center; 
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#panel1 {
+    background-color: #E67E22;
+    color: #ffffff;
+    padding: 30px;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: center; 
+    width: 92%; 
+}
+
+#Titulo-Registro {
+    color: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 24px; 
+    font-family: Arial, sans-serif; 
+
+}
+
+input[type="text"],
+select {
+    width: 300px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+#resultado {
+    margin-top: 20px;
+}
+
+
+.tabla-productos {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-productos th, .tabla-productos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabla-productos th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.tabla-productos tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabla-productos td img {
+    width: 50px; 
+    height: auto;
+}
+
+
+#productTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#productTable th, #productTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    width: auto; 
+}
+
+#productTable th {
+    background-color: #f2f2f2;
+}
+
+#productTable td:first-child {
+    text-align: center;
+}
+
+
+.imagenProducto {
+    width: 50px; 
+    height: auto; 
+}
+
+
+#pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#pagination button:hover {
+    background-color: #ddd;
+}
+
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 0;
+    background-color: #CB4335;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #CB4335;
+}
+
+.container {
+    border: 2px solid #CB4335;
+
+    background-color: #fff; 
+    width: 93.2%;
+}
+
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.filter-container div {
+    margin-right: 10px; 
+}
+
+
+.filter-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #CB4335;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-container button:hover {
+    background-color: #0056b3;
+}
+

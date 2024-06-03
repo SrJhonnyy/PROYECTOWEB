@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista de Productos</title>
+    <link rel="stylesheet" href="css/vistaproductos.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png" alt="Logo de la empresa" id="company-logo">
+        <h1>FERRETERÍA FERROVIARIA S.A.S</h1>
+    </header>
+
+    <main>
+        <section id="panel1">
+            <div id="Titulo-Registro">
+                <h2>LISTADO DE PRODUCTOS</h2>
+            </div>
+        </section>
+
+        <div class="container" id="draggable">
+            <!-- Aquí van las tarjetas de productos -->
+        </div>
+
+        <div class="pagination" id="pagination">
+            <ul>
+                <li class="disabled"><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+        </div>
+    </main>
+
+    
+    <div class="container2">
+    <nav>
+        <ul>
+            <li><button onclick="window.location.href='registroproducto.html'">Registro de Productos</button></li>
+            <li><button onclick="window.location.href='busqueda.html'">Filtro de Productos</button></li>
+        </ul>
+    </nav>
+    </div>
+    
+
+    <script src="js/database.js"></script> <!-- Cambiado el nombre del archivo JS -->
+</body>
+</html>

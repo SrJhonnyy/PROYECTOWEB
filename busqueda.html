@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro de Productos</title>
+    <link rel="stylesheet" href="css/busqueda.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png" alt="Logo de la empresa" id="company-logo">
+        <h1>FERRETERÍA FERROVIARIA S.A.S</h1>
+    </header>
+
+    <main>
+        <section id="panel1">
+            <div id="Titulo-Registro">
+                <h2>FILTRO DE PRODUCTOS</h2>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="filter-container">
+                <div>
+                    <label for="nombreProducto">Buscar por nombre:</label>
+                    <input type="text" id="nombreProducto">
+                </div>
+                <div>
+                    <label for="selectCategoria">Categoría:</label>
+                    <select id="selectCategoria">
+                        <option value="">Todos</option>
+                        <!-- Aquí puedes agregar opciones de categorías -->
+                    </select>
+                </div>
+                <div>
+                    <label for="selectTamaño">Tamaño:</label>
+                    <select id="selectTamaño">
+                        <option value="">Todos</option>
+                        <option value="Pequeño">Pequeño</option>
+                        <option value="Mediano">Mediano</option>
+                        <option value="Grande">Grande</option>
+                    </select>
+                </div>
+            
+                <button onclick="filtrarProductos()">Buscar</button>
+                <button onclick="limpiarFiltro()">Limpiar </button>
+            </div>
+        </div>
+
+        <div id="loading-message"></div> <!-- Aquí se mostrará el mensaje de carga -->
+
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Color</th>
+                    <th>Tamaño</th>
+                    <th>Material</th>
+                    <th>Código</th>
+                    <th>Imagen</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+        <div class="button-container">
+            <a href="vistaproductos.html" class="button">Regresar "Ver Productos"</a>
+        </div>
+
+    </main>
+
+    <script src="js/database.js"></script>
+    <script src="js/busqueda.js"></script>
+</body>
+</html>
